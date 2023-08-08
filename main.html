@@ -12,15 +12,14 @@
 			//Write your code here
 			let n=arr.length;
 			arr.sort((a,b)=>a-b);
-			if(n<=1 || arr.every((element)=>arr[0])){
+			if(n<=1 || arr.every((element)=>element===arr[0])){
 				return -Infinity;
 			}
 			return arr[n-2];
-			
 		}
 
 		function Main() {
-			var n = prompt("Enter the number of elements");
+			var n = promp("Enter the number of elements");
 			
 			var arr = [];
 			for (var i = 0; i < n; i++) {
